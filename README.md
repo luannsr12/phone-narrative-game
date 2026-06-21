@@ -73,6 +73,9 @@ story), and the investigation begins. No menus, no tutorial — the fiction is t
 The story is edited as a **visual flowchart** (Typebot-style) in [`editor/`](editor/) — a Vite/React
 app that lives next to the game.
 
+> 📖 **Full how-to:** **[The Story Editor — Complete Guide](docs/EDITOR_GUIDE.md)** ·
+> **[Guia completo (português)](docs/EDITOR_GUIDE.pt-BR.md)**. The essentials are below.
+
 ```bash
 cd editor
 npm install
@@ -228,6 +231,8 @@ unstuck — don't be shy. **Thank you for being here.** 💛
 
 ## 9. Docs
 
+- **[docs/EDITOR_GUIDE.md](docs/EDITOR_GUIDE.md)** — the complete story-editor guide (🇬🇧 English ·
+  🇧🇷 **[Português](docs/EDITOR_GUIDE.pt-BR.md)**).
 - **[docs/GAME_DESIGN_DOCUMENT.md](docs/GAME_DESIGN_DOCUMENT.md)** — the game bible (lore,
   characters, systems, the truth of the case).
 - **[docs/HISTORIA_ADMIN.md](docs/HISTORIA_ADMIN.md)** — production guide for the implemented story.
