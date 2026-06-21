@@ -16,3 +16,6 @@ CLAUDE.local.md
 .mcp.json
 .claude.json
 .anthropic/
+
+# Internal spec doc (kept out of the public repo)
+docs/SPEC.md

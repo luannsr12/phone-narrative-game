@@ -185,7 +185,7 @@ src/
   screens/ components/ the screens/"apps" of the fictional phone
 scripts/validateStory.mjs   story.json validator (npm run validate-story)
 editor/                visual editing panel (Vite + React + React Flow)
-docs/                  SPEC, Game Design Document and production guide
+docs/                  Game Design Document and production guide (SPEC kept private)
 ```
 
 ---
@@ -230,7 +230,6 @@ unstuck — don't be shy. **Thank you for being here.** 💛
 
 - **[docs/GAME_DESIGN_DOCUMENT.md](docs/GAME_DESIGN_DOCUMENT.md)** — the game bible (lore,
   characters, systems, the truth of the case).
-- **[docs/SPEC.md](docs/SPEC.md)** — the original project brief (design rules).
 - **[docs/HISTORIA_ADMIN.md](docs/HISTORIA_ADMIN.md)** — production guide for the implemented story.
 
 ---
