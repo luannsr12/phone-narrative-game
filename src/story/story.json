@@ -1,0 +1,1773 @@
+{
+  "meta": {
+    "title": "Sinal Trocado",
+    "version": "0.1.0",
+    "startChapter": "prologo",
+    "startingMoney": 0,
+    "blogName": "Aurora em Pauta"
+  },
+  "playerProfile": {
+    "handle": "reporter",
+    "bio": "Repórter investigativo. Vou atrás do que tentam arquivar.",
+    "avatarColor": "#3A6EA5"
+  },
+  "characters": {
+    "mae": {
+      "id": "mae",
+      "name": "Mãe",
+      "fullName": "Dona Vera",
+      "role": "Mãe",
+      "introChapter": "prologo",
+      "initials": "Mã",
+      "avatarColor": "#C98AA0",
+      "bio": "A sua mãe.",
+      "writingStyle": "Calorosa, pontuação correta, chama de \"filho\", usa ❤️🙂😅 com moderação. Mensagens um pouco mais longas que as dos mais novos.",
+      "startsUnlocked": true
+    },
+    "pedro": {
+      "id": "pedro",
+      "name": "Pedro",
+      "fullName": "Pedro Ramalho",
+      "role": "Amigo de longa data",
+      "introChapter": "chapter01",
+      "initials": "Pe",
+      "avatarColor": "#6BA368",
+      "bio": "Amigo de infância. Trabalha no cartório da cidade.",
+      "writingStyle": "Informal, brincalhão, \"vc\", \"blz\", \"kkk\", minúsculas.",
+      "startsUnlocked": true
+    },
+    "helio": {
+      "id": "helio",
+      "name": "Hélio",
+      "fullName": "Hélio Damasceno",
+      "role": "Chefe de redação",
+      "introChapter": "chapter01",
+      "initials": "Hé",
+      "avatarColor": "#5A6B82",
+      "bio": "Seu editor. Cobra prazo como quem respira.",
+      "writingStyle": "Seco, direto, sem emoji, tudo em minúsculas. Cobra entregas.",
+      "startsUnlocked": true
+    },
+    "dani": {
+      "id": "dani",
+      "name": "Dani",
+      "fullName": "Daniela Couto",
+      "role": "Fotógrafa / colega",
+      "introChapter": "chapter01",
+      "initials": "Da",
+      "avatarColor": "#C7913E",
+      "bio": "Fotógrafa da redação e parceira de pauta.",
+      "writingStyle": "Calorosa e prática, frases curtas, um emoji aqui e ali.",
+      "startsUnlocked": true
+    },
+    "vidal": {
+      "id": "vidal",
+      "name": "Sgt. Vidal",
+      "fullName": "Sargento Aílton Vidal",
+      "role": "Contato na polícia",
+      "introChapter": "chapter01",
+      "initials": "SV",
+      "avatarColor": "#4F6B7A",
+      "bio": "Conhecido na delegacia. Fala pouco, e só às vezes.",
+      "writingStyle": "Cauteloso, lacônico, formal. Evita se comprometer por escrito.",
+      "startsUnlocked": true
+    },
+    "bel": {
+      "id": "bel",
+      "name": "Bel",
+      "fullName": "Isabel Vasques",
+      "age": 19,
+      "role": "Irmã de Cora",
+      "introChapter": "prologo",
+      "initials": "Be",
+      "avatarColor": "#D98AA6",
+      "bio": "Irmã mais nova de Cora. Foi quem te procurou.",
+      "writingStyle": "19 anos, ansiosa. Tudo em minúsculas, sem pontuação final, muito \"...\", \"vc\", \"pfv\", \"n\". Frases curtas e emendadas, às vezes em rajada."
+    },
+    "cora": {
+      "id": "cora",
+      "name": "Cora",
+      "fullName": "Cora Vasques",
+      "age": 24,
+      "role": "Desaparecida",
+      "introChapter": "chapter01",
+      "initials": "CV",
+      "avatarColor": "#7E6CC4",
+      "bio": "A antiga dona do seu número. Sumiu há quase um mês.",
+      "writingStyle": "Quando aparece (prints/áudios antigos): direta, irônica, carinhosa com a irmã, usa 💛."
+    }
+  },
+  "evidence": {
+    "ev_foto_cora": {
+      "id": "ev_foto_cora",
+      "kind": "photo",
+      "title": "Foto da Cora",
+      "source": "bel",
+      "description": "Foto que a Bel mandou da irmã, Cora Vasques, 24 anos.",
+      "caseRelevance": "O rosto da pessoa desaparecida.",
+      "thumbnailColor": "#7E6CC4"
+    },
+    "ev_print_ultima_msg": {
+      "id": "ev_print_ultima_msg",
+      "kind": "screenshot",
+      "title": "Última mensagem da Cora",
+      "source": "bel",
+      "description": "Print da última mensagem que a Cora mandou pra Bel antes de sumir.",
+      "caseRelevance": "Última comunicação conhecida. Ela diz que ia 'resolver uma coisa' e ligar depois — nunca ligou.",
+      "thumbnailColor": "#2E6B62",
+      "body": "Cora 💛: vou resolver uma coisa hoje, depois te ligo\nCora 💛: te amo, bita\n(sexta-feira, 21:14)"
+    },
+    "ev_story_cora": {
+      "id": "ev_story_cora",
+      "kind": "screenshot",
+      "title": "Último story da Cora",
+      "source": "system",
+      "description": "O último story público da Cora, postado de madrugada no mesmo dia em que sumiu.",
+      "caseRelevance": "Texto: 'enfim vou ter respostas', sobre a foto de um estacionamento vazio. Tom de quem ia voltar — não de quem ia embora.",
+      "thumbnailColor": "#1C2230",
+      "body": "Story de @cora — madrugada de sábado.\nFoto: um estacionamento vazio, mal iluminado.\nLegenda: 'enfim vou ter respostas'."
+    }
+  },
+  "media": {},
+  "news": {
+    "news_cora_sumico": {
+      "id": "news_cora_sumico",
+      "outlet": "Aurora Agora",
+      "date": "há 3 semanas",
+      "headline": "Jovem é dada como desaparecida em Aurora; polícia trata caso como saída voluntária",
+      "body": "A família de Cora Vasques, 24, registrou o desaparecimento da jovem na última semana. Segundo a Polícia Civil, \"não há indícios de crime\" e o caso é tratado, até o momento, como saída voluntária.\n\nParentes contestam a versão. \"Ela não sumiria sem avisar\", disse uma familiar, que pediu para não ser identificada.\n\nQuem tiver informações pode procurar a delegacia de Aurora.",
+      "initial": true
+    }
+  },
+  "social": {
+    "post_player_1": {
+      "id": "post_player_1",
+      "author": "player",
+      "initial": true,
+      "date": "há 5 dias",
+      "likes": 318,
+      "caption": "Toda cidade pequena tem um assunto que todo mundo conhece e ninguém comenta. É nesses que eu gosto de mexer. 🖊️",
+      "comments": [
+        {
+          "author": "aurora_agora",
+          "text": "é por isso que a gente te lê 👏"
+        },
+        {
+          "author": "dani",
+          "text": "bora pra próxima pauta então"
+        }
+      ]
+    },
+    "post_player_2": {
+      "id": "post_player_2",
+      "author": "player",
+      "initial": true,
+      "date": "há 1 mês",
+      "likes": 742,
+      "caption": "Há um ano essa matéria tirou um secretário do cargo. Documento por documento. Valeu cada porta na cara. 📰",
+      "comments": [
+        {
+          "author": "pedro",
+          "text": "fechou hein mano kkk orgulho"
+        },
+        {
+          "author": "mural_aurora",
+          "text": "esse aí não tem medo de ninguém 👀"
+        }
+      ]
+    },
+    "post_cora_normal": {
+      "id": "post_cora_normal",
+      "author": "cora",
+      "initial": true,
+      "date": "há 1 mês",
+      "likes": 96,
+      "caption": "café da bita + eu = melhor parte do dia ☕💛",
+      "comments": [
+        {
+          "author": "bel",
+          "text": "eu que fiz tá 🙄💛"
+        }
+      ]
+    },
+    "post_cora_last": {
+      "id": "post_cora_last",
+      "author": "cora",
+      "initial": true,
+      "date": "há 1 mês",
+      "likes": 154,
+      "caption": "umas verdades a gente só descobre quando para de ter medo de perguntar.",
+      "comments": [
+        {
+          "author": "bel",
+          "text": "ce ta bem? 🥺"
+        },
+        {
+          "author": "mural_aurora",
+          "text": "isso é indireta pra quem? 👀👀"
+        }
+      ]
+    },
+    "post_mural_caso": {
+      "id": "post_mural_caso",
+      "author": "mural_aurora",
+      "initial": true,
+      "date": "há 2 semanas",
+      "likes": 203,
+      "caption": "gente, e a moça que sumiu? a família tá pedindo ajuda e a polícia diz que ela \"foi embora\". será mesmo? 🤔",
+      "comments": [
+        {
+          "author": "aurora_agora",
+          "text": "qualquer informação, procurem a delegacia."
+        }
+      ],
+      "commentOptions": [
+        {
+          "id": "cmt_caso_press",
+          "text": "Quem souber de algo, fale. Silêncio nunca ajudou ninguém a voltar pra casa.",
+          "effects": [
+            {
+              "type": "setFlag",
+              "flag": "comentou_caso"
+            }
+          ]
+        },
+        {
+          "id": "cmt_caso_calado",
+          "text": "Melhor não alimentar boato sem apuração."
+        }
+      ]
+    }
+  },
+  "socialStories": {
+    "story_cora_ultima": {
+      "id": "story_cora_ultima",
+      "author": "cora",
+      "initial": true,
+      "date": "há 1 mês",
+      "text": "enfim vou ter respostas"
+    },
+    "story_player_nota": {
+      "id": "story_player_nota",
+      "author": "player",
+      "date": "agora",
+      "text": "Nova nota no ar: o caso Cora. 🖊️"
+    }
+  },
+  "socialNpcs": {
+    "aurora_agora": {
+      "id": "aurora_agora",
+      "name": "Aurora Agora",
+      "avatarColor": "#C2502E",
+      "bio": "Notícias de Aurora e região.",
+      "followedByDefault": true
+    },
+    "mural_aurora": {
+      "id": "mural_aurora",
+      "name": "Tô Sabendo Aurora",
+      "avatarColor": "#7B5EA7",
+      "bio": "Você manda, a gente posta. (anônimo)",
+      "followedByDefault": true
+    }
+  },
+  "blog": {
+    "blog_primeira_nota": {
+      "id": "blog_primeira_nota",
+      "title": "Sumiço em Aurora: a pergunta que ninguém quer fazer",
+      "date": "rascunho de hoje",
+      "muralStory": "story_player_nota",
+      "options": [
+        {
+          "id": "nota_cautelosa",
+          "label": "Versão cautelosa — só as perguntas",
+          "body": "Uma jovem de 24 anos não é vista há quase um mês em Aurora. A polícia trata o caso como saída voluntária.\n\nNão é o que pensa a família. E não é o que sugere a última mensagem pública dela, postada de madrugada, no mesmo dia em que desapareceu.\n\nEsta coluna não vai acusar ninguém. Vai apenas fazer as perguntas que ainda não foram feitas.",
+          "effects": [
+            {
+              "type": "setFlag",
+              "flag": "nota_tom_cauteloso"
+            }
+          ]
+        },
+        {
+          "id": "nota_ousada",
+          "label": "Versão ousada — aponta a contradição",
+          "body": "Quem decide \"ir embora\" não escreve \"enfim vou ter respostas\" e some no meio da noite.\n\nA polícia de Aurora arquivou o caso de Cora Vasques como saída voluntária. A família não acredita. As próprias palavras dela, públicas, contradizem a versão oficial.\n\nAlguém nesta cidade sabe mais do que diz. Esta coluna vai descobrir o quê.",
+          "effects": [
+            {
+              "type": "setFlag",
+              "flag": "nota_tom_ousado"
+            }
+          ]
+        }
+      ]
+    },
+    "blog_teste": {
+      "id": "blog_teste",
+      "title": "TESTE — Pré-visualização de matéria",
+      "date": "rascunho de teste",
+      "options": [
+        {
+          "id": "teste_sobrio",
+          "label": "Tom sóbrio (jornalístico)",
+          "body": "Esta é uma matéria de teste criada para avaliar a tela de pré-visualização do Blog.\n\nO objetivo é conferir como o texto aparece já formatado, com parágrafos separados, título e assinatura — exatamente como ficaria depois de publicado.\n\nSe você está lendo isto na pré-visualização, o fluxo está funcionando: dá para revisar antes de publicar e voltar para escolher outro ângulo."
+        },
+        {
+          "id": "teste_sensacional",
+          "label": "Tom sensacionalista",
+          "body": "VOCÊ NÃO VAI ACREDITAR no que este teste revela sobre a pré-visualização do Blog!\n\nMesmo texto, outro ângulo: serve para confirmar que cada opção gera um conteúdo diferente na tela de preview.\n\nEscolha este para ver como a mesma pauta muda de voz conforme a opção selecionada."
+        }
+      ],
+      "imageUrl": "https://picsum.photos/seed/auroraempauta/800/450"
+    }
+  },
+  "ads": {
+    "ad_aurora_radio": {
+      "id": "ad_aurora_radio",
+      "brand": "Rádio Aurora FM",
+      "caption": "A trilha da sua cidade, 24h no ar. 104,9 FM.",
+      "cta": "Ouvir ao vivo",
+      "url": "aurorafm.com.br",
+      "placement": "both",
+      "active": true
+    }
+  },
+  "endings": {
+    "ending_verdade": {
+      "id": "ending_verdade",
+      "title": "A Verdade",
+      "tagline": "Você não deixou arquivarem.",
+      "summary": "Placeholder — final ainda não alcançável nesta versão.",
+      "scenes": [
+        "(final em construção)"
+      ]
+    },
+    "ending_silencio": {
+      "id": "ending_silencio",
+      "title": "O Silêncio",
+      "tagline": "Aurora voltou a dormir.",
+      "summary": "Placeholder — final ainda não alcançável nesta versão.",
+      "scenes": [
+        "(final em construção)"
+      ]
+    }
+  },
+  "chapters": {
+    "prologo": {
+      "id": "prologo",
+      "index": 0,
+      "title": "Prólogo — Linha Nova",
+      "objective": "Você ativou um número novo. Veja quem aparece do outro lado.",
+      "summary": "Onboarding + primeiro contato: a mãe testa o número novo e um desconhecido procura a antiga dona da linha.",
+      "entry": "pg_start",
+      "nodes": {
+        "pg_start": {
+          "id": "pg_start",
+          "type": "message",
+          "speaker": "mae",
+          "thread": "mae",
+          "text": "Oi, {{player_first_name}} 🙂",
+          "typingMs": 1890,
+          "next": "for_mqj94zc81",
+          "effects": [
+            {
+              "type": "setPresence",
+              "character": "mae",
+              "online": true
+            },
+            {
+              "type": "offerBlog",
+              "blog": "blog_teste"
+            }
+          ]
+        },
+        "pg_m2": {
+          "id": "pg_m2",
+          "type": "message",
+          "speaker": "mae",
+          "thread": "mae",
+          "text": "Chegou?",
+          "typingMs": 735,
+          "next": "pg_m3"
+        },
+        "pg_m3": {
+          "id": "pg_m3",
+          "type": "message",
+          "speaker": "mae",
+          "thread": "mae",
+          "text": "Tô mandando pro número novo que você me passou ontem no telefone.",
+          "typingMs": 3925,
+          "next": "pg_m4"
+        },
+        "pg_m4": {
+          "id": "pg_m4",
+          "type": "message",
+          "speaker": "mae",
+          "thread": "mae",
+          "text": "Fiquei com medo de ter anotado errado 😅",
+          "typingMs": 2550,
+          "next": "cal_mqjqx30d1"
+        },
+        "pg_c1": {
+          "id": "pg_c1",
+          "type": "choice",
+          "thread": "mae",
+          "options": [
+            {
+              "id": "pg_o1a",
+              "text": "Chegou sim, mãe ❤️",
+              "next": "pg_m5"
+            },
+            {
+              "id": "pg_o1b",
+              "text": "oi mãe! chegou, acabei de ativar o chip",
+              "next": "pg_m5"
+            },
+            {
+              "id": "pg_o1c",
+              "text": "Chegou. Pode salvar esse número então 🙂",
+              "next": "pg_m5"
+            }
+          ]
+        },
+        "pg_m5": {
+          "id": "pg_m5",
+          "type": "message",
+          "speaker": "mae",
+          "thread": "mae",
+          "text": "Ai que alívio 😅",
+          "typingMs": 1230,
+          "next": "for_mqjriw1j3"
+        },
+        "pg_m6": {
+          "id": "pg_m6",
+          "type": "message",
+          "speaker": "mae",
+          "thread": "mae",
+          "text": "Já tava me preparando pra te ligar de novo",
+          "typingMs": 2660,
+          "next": "pg_b1"
+        },
+        "pg_b1": {
+          "id": "pg_b1",
+          "type": "message",
+          "speaker": "bel",
+          "thread": "bel",
+          "text": "oi",
+          "typingMs": 700,
+          "next": "pg_m7"
+        },
+        "pg_m7": {
+          "id": "pg_m7",
+          "type": "message",
+          "speaker": "mae",
+          "thread": "mae",
+          "text": "Você comeu alguma coisa hoje? Ou foi direto pro trabalho de novo 🙄",
+          "typingMs": 4035,
+          "next": "pg_c2"
+        },
+        "pg_c2": {
+          "id": "pg_c2",
+          "type": "choice",
+          "thread": "mae",
+          "options": [
+            {
+              "id": "pg_o2a",
+              "text": "comi sim, mãe 😅",
+              "next": "pg_m8"
+            },
+            {
+              "id": "pg_o2b",
+              "text": "ainda não, mas já já eu como",
+              "next": "pg_m8"
+            },
+            {
+              "id": "pg_o2c",
+              "text": "para de se preocupar comigo kkk",
+              "next": "pg_m8"
+            }
+          ]
+        },
+        "pg_m8": {
+          "id": "pg_m8",
+          "type": "message",
+          "speaker": "mae",
+          "thread": "mae",
+          "text": "Você é pior que criança 🙄❤️",
+          "typingMs": 1890,
+          "next": "pg_m9"
+        },
+        "pg_m9": {
+          "id": "pg_m9",
+          "type": "message",
+          "speaker": "mae",
+          "thread": "mae",
+          "text": "Vai com calma nesse trabalho, {{player_first_name}}. Qualquer coisa me liga.",
+          "typingMs": 4530,
+          "next": "pg_c3"
+        },
+        "pg_c3": {
+          "id": "pg_c3",
+          "type": "choice",
+          "thread": "mae",
+          "options": [
+            {
+              "id": "pg_o3a",
+              "text": "pode deixar ❤️",
+              "next": "pg_m10"
+            },
+            {
+              "id": "pg_o3b",
+              "text": "também te amo, mãe",
+              "next": "pg_m10"
+            }
+          ]
+        },
+        "pg_m10": {
+          "id": "pg_m10",
+          "type": "message",
+          "speaker": "mae",
+          "thread": "mae",
+          "text": "❤️",
+          "typingMs": 700,
+          "next": "pg_b2"
+        },
+        "pg_b2": {
+          "id": "pg_b2",
+          "type": "message",
+          "speaker": "bel",
+          "thread": "bel",
+          "text": "cora?",
+          "typingMs": 700,
+          "next": "pg_b3"
+        },
+        "pg_b3": {
+          "id": "pg_b3",
+          "type": "message",
+          "speaker": "bel",
+          "thread": "bel",
+          "text": "vc trocou de numero??",
+          "typingMs": 1505,
+          "next": "pg_b4"
+        },
+        "pg_b4": {
+          "id": "pg_b4",
+          "type": "message",
+          "speaker": "bel",
+          "thread": "bel",
+          "text": "responde pfv",
+          "typingMs": 1010,
+          "next": "pg_cb1"
+        },
+        "pg_cb1": {
+          "id": "pg_cb1",
+          "type": "choice",
+          "thread": "bel",
+          "options": [
+            {
+              "id": "pg_ob1a",
+              "text": "oi? acho que você se enganou no número",
+              "next": "pg_b5",
+              "effects": [
+                {
+                  "type": "setFlag",
+                  "flag": "pg_corrigiu"
+                }
+              ]
+            },
+            {
+              "id": "pg_ob1b",
+              "text": "quem é cora?",
+              "next": "pg_b5"
+            },
+            {
+              "id": "pg_ob1c",
+              "text": "esse número é meu, comprei o chip faz pouco tempo",
+              "next": "pg_b5"
+            }
+          ]
+        },
+        "pg_b5": {
+          "id": "pg_b5",
+          "type": "message",
+          "speaker": "bel",
+          "thread": "bel",
+          "text": "ah",
+          "typingMs": 700,
+          "next": "pg_b6"
+        },
+        "pg_b6": {
+          "id": "pg_b6",
+          "type": "message",
+          "speaker": "bel",
+          "thread": "bel",
+          "text": "desculpa",
+          "typingMs": 800,
+          "next": "pg_b7"
+        },
+        "pg_b7": {
+          "id": "pg_b7",
+          "type": "message",
+          "speaker": "bel",
+          "thread": "bel",
+          "text": "esse numero era da minha irmã",
+          "typingMs": 1945,
+          "next": "pg_b8"
+        },
+        "pg_b8": {
+          "id": "pg_b8",
+          "type": "message",
+          "speaker": "bel",
+          "thread": "bel",
+          "text": "a cora",
+          "typingMs": 800,
+          "next": "pg_b9"
+        },
+        "pg_b9": {
+          "id": "pg_b9",
+          "type": "message",
+          "speaker": "bel",
+          "thread": "bel",
+          "text": "ela sumiu e esse era o ultimo numero que eu tinha dela",
+          "typingMs": 3320,
+          "next": "pg_cb2"
+        },
+        "pg_cb2": {
+          "id": "pg_cb2",
+          "type": "choice",
+          "thread": "bel",
+          "options": [
+            {
+              "id": "pg_ob2a",
+              "text": "como assim sumiu?",
+              "next": "pg_b10"
+            },
+            {
+              "id": "pg_ob2b",
+              "text": "nossa… sinto muito",
+              "next": "pg_b10",
+              "effects": [
+                {
+                  "type": "setFlag",
+                  "flag": "pg_empatia"
+                }
+              ]
+            },
+            {
+              "id": "pg_ob2c",
+              "text": "vocês já procuraram a polícia?",
+              "next": "pg_b10",
+              "effects": [
+                {
+                  "type": "setFlag",
+                  "flag": "pg_falou_policia"
+                }
+              ]
+            }
+          ]
+        },
+        "pg_b10": {
+          "id": "pg_b10",
+          "type": "message",
+          "speaker": "bel",
+          "thread": "bel",
+          "text": "faz quase um mês",
+          "typingMs": 1230,
+          "next": "pg_b11"
+        },
+        "pg_b11": {
+          "id": "pg_b11",
+          "type": "message",
+          "speaker": "bel",
+          "thread": "bel",
+          "text": "a policia disse que ela foi por vontade propria",
+          "typingMs": 2935,
+          "next": "pg_b12"
+        },
+        "pg_b12": {
+          "id": "pg_b12",
+          "type": "message",
+          "speaker": "bel",
+          "thread": "bel",
+          "text": "mas a cora nunca sumiria assim",
+          "typingMs": 2000,
+          "next": "pg_b13"
+        },
+        "pg_b13": {
+          "id": "pg_b13",
+          "type": "message",
+          "speaker": "bel",
+          "thread": "bel",
+          "text": "nao comigo",
+          "typingMs": 900,
+          "next": "pg_cb3"
+        },
+        "pg_cb3": {
+          "id": "pg_cb3",
+          "type": "choice",
+          "thread": "bel",
+          "options": [
+            {
+              "id": "pg_ob3a",
+              "text": "me conta o que aconteceu. quem sabe eu consigo ajudar",
+              "next": "pg_pause",
+              "effects": [
+                {
+                  "type": "setFlag",
+                  "flag": "pg_ajudar"
+                }
+              ]
+            },
+            {
+              "id": "pg_ob3b",
+              "text": "olha, eu sou jornalista. é meio que meu trabalho cavar esse tipo de história. posso dar uma olhada se você quiser",
+              "next": "pg_pause",
+              "effects": [
+                {
+                  "type": "setFlag",
+                  "flag": "pg_jornalista"
+                }
+              ]
+            },
+            {
+              "id": "pg_ob3c",
+              "text": "por que você tem tanta certeza que aconteceu alguma coisa?",
+              "next": "pg_pause",
+              "effects": [
+                {
+                  "type": "setFlag",
+                  "flag": "pg_cauteloso"
+                }
+              ]
+            }
+          ]
+        },
+        "pg_pause": {
+          "id": "pg_pause",
+          "type": "delay",
+          "seconds": 4,
+          "next": "pg_b_intro"
+        },
+        "pg_b_intro": {
+          "id": "pg_b_intro",
+          "type": "message",
+          "speaker": "bel",
+          "thread": "bel",
+          "text": "serio??",
+          "typingMs": 900,
+          "next": "pg_b_intro2"
+        },
+        "pg_b_intro2": {
+          "id": "pg_b_intro2",
+          "type": "message",
+          "speaker": "bel",
+          "thread": "bel",
+          "text": "vc faria isso?",
+          "typingMs": 1120,
+          "next": "pg_b_intro3"
+        },
+        "pg_b_intro3": {
+          "id": "pg_b_intro3",
+          "type": "message",
+          "speaker": "bel",
+          "thread": "bel",
+          "text": "ninguem aqui ta nem ai",
+          "typingMs": 1560,
+          "next": "pg_b_name"
+        },
+        "pg_b_name": {
+          "id": "pg_b_name",
+          "type": "message",
+          "speaker": "bel",
+          "thread": "bel",
+          "text": "eu sou a bel",
+          "typingMs": 800,
+          "next": "pg_b_name2"
+        },
+        "pg_b_name2": {
+          "id": "pg_b_name2",
+          "type": "message",
+          "speaker": "bel",
+          "thread": "bel",
+          "text": "isabel. irma da cora",
+          "typingMs": 1450,
+          "next": "pg_cb4",
+          "effects": [
+            {
+              "type": "unlockContact",
+              "character": "bel"
+            },
+            {
+              "type": "setFlag",
+              "flag": "conheceu_bel"
+            },
+            {
+              "type": "addTimeline",
+              "id": "tl_bel",
+              "title": "Bel procura a irmã, Cora",
+              "detail": "O número que você acabou de ativar era da Cora — desaparecida há quase um mês."
+            }
+          ]
+        },
+        "pg_cb4": {
+          "id": "pg_cb4",
+          "type": "choice",
+          "thread": "bel",
+          "options": [
+            {
+              "id": "pg_ob4a",
+              "text": "prazer, bel. me manda tudo que você tiver sobre a cora",
+              "next": "pg_b_thanks",
+              "effects": [
+                {
+                  "type": "setFlag",
+                  "flag": "pg_pediu_info"
+                }
+              ]
+            },
+            {
+              "id": "pg_ob4b",
+              "text": "tá bom, bel. amanhã cedo eu começo a olhar isso com calma",
+              "next": "pg_b_thanks"
+            }
+          ]
+        },
+        "pg_b_thanks": {
+          "id": "pg_b_thanks",
+          "type": "message",
+          "speaker": "bel",
+          "thread": "bel",
+          "text": "obrigada",
+          "typingMs": 800,
+          "next": "pg_b_thanks2"
+        },
+        "pg_b_thanks2": {
+          "id": "pg_b_thanks2",
+          "type": "message",
+          "speaker": "bel",
+          "thread": "bel",
+          "text": "de verdade",
+          "typingMs": 900,
+          "next": "pg_end"
+        },
+        "pg_end": {
+          "id": "pg_end",
+          "type": "chapterEnd",
+          "next": "chapter01",
+          "effects": [
+            {
+              "type": "setFlag",
+              "flag": "prologo_done"
+            }
+          ]
+        },
+        "off_mqj24qsi1": {
+          "id": "off_mqj24qsi1",
+          "type": "offerBlog",
+          "blog": "blog_primeira_nota"
+        },
+        "act_mqj25ajn2": {
+          "id": "act_mqj25ajn2",
+          "type": "activity",
+          "thread": "mae",
+          "speaker": "mae",
+          "kind": "typing",
+          "seconds": 3,
+          "next": "del_mqj28csx3"
+        },
+        "del_mqj28csx3": {
+          "id": "del_mqj28csx3",
+          "type": "delay",
+          "seconds": 60,
+          "next": "pg_m6"
+        },
+        "eve_mqj7q4vd5": {
+          "id": "eve_mqj7q4vd5",
+          "type": "event",
+          "event": "likePost",
+          "onEvent": "del_mqj96ipo2",
+          "post": "post_cora_normal"
+        },
+        "for_mqj94zc81": {
+          "id": "for_mqj94zc81",
+          "type": "fork",
+          "outputs": [
+            "pg_m2",
+            "eve_mqj7q4vd5"
+          ]
+        },
+        "del_mqj96ipo2": {
+          "id": "del_mqj96ipo2",
+          "type": "delay",
+          "seconds": 10,
+          "next": "not_mqj96yy83"
+        },
+        "not_mqj96yy83": {
+          "id": "not_mqj96yy83",
+          "type": "notification",
+          "app": "social",
+          "title": "Curtiu",
+          "body": "Você curtiu um post"
+        },
+        "cal_mqjqx30d1": {
+          "id": "cal_mqjqx30d1",
+          "type": "callScene",
+          "caller": "mae",
+          "direction": "incoming",
+          "entry": "cs_aud_mqjqz0y02",
+          "scene": {
+            "cs_aud_mqjqz0y02": {
+              "id": "cs_aud_mqjqz0y02",
+              "type": "audio",
+              "speaker": "mae",
+              "audioUrl": "https://files.catbox.moe/rmot7h.mp3",
+              "text": "Isso é um teste",
+              "next": "cs_cho_mqjr21594"
+            },
+            "cs_cho_mqjr21594": {
+              "id": "cs_cho_mqjr21594",
+              "type": "choice",
+              "options": [
+                {
+                  "id": "cs_cho_mqjr21594_o1",
+                  "text": "Resposta 1",
+                  "next": "cs_act_mqjr3aut8"
+                },
+                {
+                  "id": "opt_mqjr27s95",
+                  "text": "Resposta 2",
+                  "next": "cs_aud_mqjr2mp27"
+                },
+                {
+                  "id": "opt_mqjr2iou6",
+                  "text": "Resposta 3",
+                  "next": "cs_act_mqjrhpd82",
+                  "silent": true
+                }
+              ],
+              "timeoutSec": 8,
+              "timeoutNext": "cs_aud_mqjsid5h1"
+            },
+            "cs_aud_mqjr2mp27": {
+              "id": "cs_aud_mqjr2mp27",
+              "type": "audio",
+              "speaker": "mae",
+              "audioUrl": "https://files.catbox.moe/rmot7h.mp3",
+              "text": "Mais um teste  Mais um teste Mais um teste",
+              "next": "cs_han_mqjr4mi8a"
+            },
+            "cs_act_mqjr3aut8": {
+              "id": "cs_act_mqjr3aut8",
+              "type": "action",
+              "effects": [
+                {
+                  "type": "money",
+                  "amount": 50,
+                  "reason": "Pix de teste"
+                }
+              ],
+              "next": "cs_del_mqjr4gnx9"
+            },
+            "cs_del_mqjr4gnx9": {
+              "id": "cs_del_mqjr4gnx9",
+              "type": "delay",
+              "seconds": 2,
+              "next": "cs_han_mqjr4mi8a"
+            },
+            "cs_han_mqjr4mi8a": {
+              "id": "cs_han_mqjr4mi8a",
+              "type": "hangup"
+            },
+            "cs_act_mqjrhpd82": {
+              "id": "cs_act_mqjrhpd82",
+              "type": "action",
+              "effects": [
+                {
+                  "type": "setFlag",
+                  "flag": "teste_001",
+                  "value": 1
+                }
+              ],
+              "next": "cs_han_mqjr4mi8a"
+            },
+            "cs_aud_mqjsid5h1": {
+              "id": "cs_aud_mqjsid5h1",
+              "type": "audio",
+              "speaker": "mae",
+              "audioUrl": "https://files.catbox.moe/rmot7h.mp3",
+              "text": "Esta ai? estou desligando",
+              "next": "cs_del_mqjsjqgh3"
+            },
+            "cs_del_mqjsjqgh3": {
+              "id": "cs_del_mqjsjqgh3",
+              "type": "delay",
+              "seconds": 2,
+              "next": "cs_han_mqjr4mi8a"
+            }
+          },
+          "onDecline": {
+            "thread": "mae",
+            "next": "pg_c1"
+          },
+          "ringSeconds": 20,
+          "next": "pg_c1",
+          "onTimeout": {
+            "next": "pg_c1"
+          }
+        },
+        "for_mqjriw1j3": {
+          "id": "for_mqjriw1j3",
+          "type": "fork",
+          "outputs": [
+            "act_mqj25ajn2",
+            "bra_mqjrknl25"
+          ]
+        },
+        "bra_mqjrknl25": {
+          "id": "bra_mqjrknl25",
+          "type": "branch",
+          "branches": [
+            {
+              "condition": {
+                "type": "flagEquals",
+                "flag": "teste_001",
+                "value": 1
+              },
+              "next": "off_mqj24qsi1"
+            }
+          ]
+        }
+      }
+    },
+    "chapter01": {
+      "id": "chapter01",
+      "index": 1,
+      "title": "Capítulo 1 — A Antiga Dona do Número",
+      "objective": "Descubra quem é Cora — e por que ela sumiu.",
+      "summary": "Bel manda o material da irmã; o jogador levanta as primeiras evidências e encontra a contradição no último story da Cora.",
+      "entry": "c1_start",
+      "nodes": {
+        "c1_start": {
+          "id": "c1_start",
+          "type": "message",
+          "speaker": "helio",
+          "thread": "helio",
+          "text": "bom dia. cadê a matéria da enchente?",
+          "typingMs": 2330,
+          "next": "c1_h2",
+          "effects": [
+            {
+              "type": "setPresence",
+              "character": "helio",
+              "online": true
+            }
+          ]
+        },
+        "c1_h2": {
+          "id": "c1_h2",
+          "type": "message",
+          "speaker": "helio",
+          "thread": "helio",
+          "text": "fecha hoje, sem falta",
+          "typingMs": 1505,
+          "next": "c1_hc1"
+        },
+        "c1_hc1": {
+          "id": "c1_hc1",
+          "type": "choice",
+          "thread": "helio",
+          "options": [
+            {
+              "id": "c1_oh1a",
+              "text": "tô fechando, Hélio. te mando até a tarde",
+              "next": "c1_h3"
+            },
+            {
+              "id": "c1_oh1b",
+              "text": "quase pronta. me dá até o fim do dia",
+              "next": "c1_h3"
+            }
+          ]
+        },
+        "c1_h3": {
+          "id": "c1_h3",
+          "type": "message",
+          "speaker": "helio",
+          "thread": "helio",
+          "text": "até a tarde. não me deixa na mão",
+          "typingMs": 2110,
+          "next": "c1_bel_open"
+        },
+        "c1_bel_open": {
+          "id": "c1_bel_open",
+          "type": "message",
+          "speaker": "bel",
+          "thread": "bel",
+          "text": "oi, bom dia",
+          "typingMs": 955,
+          "next": "c1_2",
+          "effects": [
+            {
+              "type": "setPresence",
+              "character": "bel",
+              "online": true
+            }
+          ]
+        },
+        "c1_2": {
+          "id": "c1_2",
+          "type": "message",
+          "speaker": "bel",
+          "thread": "bel",
+          "text": "essa é a cora",
+          "typingMs": 1065,
+          "next": "c1_3",
+          "attachment": {
+            "kind": "image",
+            "evidence": "ev_foto_cora",
+            "label": "cora.jpg"
+          },
+          "effects": [
+            {
+              "type": "addEvidence",
+              "evidence": "ev_foto_cora"
+            }
+          ]
+        },
+        "c1_3": {
+          "id": "c1_3",
+          "type": "message",
+          "speaker": "bel",
+          "thread": "bel",
+          "text": "24 anos",
+          "typingMs": 800,
+          "next": "c1_4"
+        },
+        "c1_4": {
+          "id": "c1_4",
+          "type": "message",
+          "speaker": "bel",
+          "thread": "bel",
+          "text": "a gente mora junto. ela saiu numa sexta e nao voltou",
+          "typingMs": 3210,
+          "next": "c1_c1"
+        },
+        "c1_c1": {
+          "id": "c1_c1",
+          "type": "choice",
+          "thread": "bel",
+          "options": [
+            {
+              "id": "c1_o1a",
+              "text": "ela falou onde ia?",
+              "next": "c1_5"
+            },
+            {
+              "id": "c1_o1b",
+              "text": "quando foi a última vez que você falou com ela?",
+              "next": "c1_5"
+            },
+            {
+              "id": "c1_o1c",
+              "text": "ela costumava sumir assim às vezes?",
+              "next": "c1_5"
+            }
+          ]
+        },
+        "c1_5": {
+          "id": "c1_5",
+          "type": "message",
+          "speaker": "bel",
+          "thread": "bel",
+          "text": "ela me mandou uma msg de tarde",
+          "typingMs": 2000,
+          "next": "c1_6"
+        },
+        "c1_6": {
+          "id": "c1_6",
+          "type": "message",
+          "speaker": "bel",
+          "thread": "bel",
+          "text": "depois nunca mais",
+          "typingMs": 900,
+          "next": "c1_7"
+        },
+        "c1_7": {
+          "id": "c1_7",
+          "type": "message",
+          "speaker": "bel",
+          "thread": "bel",
+          "text": "deixa eu achar aqui",
+          "typingMs": 1395,
+          "next": "c1_8"
+        },
+        "c1_8": {
+          "id": "c1_8",
+          "type": "message",
+          "speaker": "bel",
+          "thread": "bel",
+          "text": "achei",
+          "typingMs": 900,
+          "next": "c1_9",
+          "attachment": {
+            "kind": "image",
+            "evidence": "ev_print_ultima_msg",
+            "label": "print.png"
+          },
+          "effects": [
+            {
+              "type": "addEvidence",
+              "evidence": "ev_print_ultima_msg"
+            }
+          ]
+        },
+        "c1_9": {
+          "id": "c1_9",
+          "type": "message",
+          "speaker": "bel",
+          "thread": "bel",
+          "text": "ela disse que ia 'resolver uma coisa' e que ligava depois",
+          "typingMs": 3485,
+          "next": "c1_10"
+        },
+        "c1_10": {
+          "id": "c1_10",
+          "type": "message",
+          "speaker": "bel",
+          "thread": "bel",
+          "text": "nunca ligou",
+          "typingMs": 900,
+          "next": "c1_c2"
+        },
+        "c1_c2": {
+          "id": "c1_c2",
+          "type": "choice",
+          "thread": "bel",
+          "options": [
+            {
+              "id": "c1_o2a",
+              "text": "resolver o quê? ela ia se encontrar com alguém?",
+              "next": "c1_11"
+            },
+            {
+              "id": "c1_o2b",
+              "text": "você sabe se ela tava preocupada com alguma coisa?",
+              "next": "c1_11",
+              "effects": [
+                {
+                  "type": "setFlag",
+                  "flag": "c1_perguntou_medo"
+                }
+              ]
+            },
+            {
+              "id": "c1_o2c",
+              "text": "a polícia chegou a ver essa mensagem?",
+              "next": "c1_11",
+              "effects": [
+                {
+                  "type": "setFlag",
+                  "flag": "c1_falou_policia"
+                }
+              ]
+            }
+          ]
+        },
+        "c1_11": {
+          "id": "c1_11",
+          "type": "message",
+          "speaker": "bel",
+          "thread": "bel",
+          "text": "ela andava estranha",
+          "typingMs": 1395,
+          "next": "c1_12"
+        },
+        "c1_12": {
+          "id": "c1_12",
+          "type": "message",
+          "speaker": "bel",
+          "thread": "bel",
+          "text": "sumia do celular, parou de postar",
+          "typingMs": 2165,
+          "next": "c1_13"
+        },
+        "c1_13": {
+          "id": "c1_13",
+          "type": "message",
+          "speaker": "bel",
+          "thread": "bel",
+          "text": "mas naquele dia ela postou um story",
+          "typingMs": 2275,
+          "next": "c1_14"
+        },
+        "c1_14": {
+          "id": "c1_14",
+          "type": "message",
+          "speaker": "bel",
+          "thread": "bel",
+          "text": "de madrugada",
+          "typingMs": 800,
+          "next": "c1_15"
+        },
+        "c1_15": {
+          "id": "c1_15",
+          "type": "message",
+          "speaker": "bel",
+          "thread": "bel",
+          "text": "ainda ta la no perfil dela. da uma olhada",
+          "typingMs": 2605,
+          "next": "c1_16"
+        },
+        "c1_16": {
+          "id": "c1_16",
+          "type": "message",
+          "speaker": "bel",
+          "thread": "bel",
+          "text": "o @ dela é @cora",
+          "typingMs": 900,
+          "next": "c1_17",
+          "effects": [
+            {
+              "type": "setFlag",
+              "flag": "tem_handle_cora"
+            },
+            {
+              "type": "addEvidence",
+              "evidence": "ev_story_cora"
+            }
+          ]
+        },
+        "c1_17": {
+          "id": "c1_17",
+          "type": "message",
+          "speaker": "bel",
+          "thread": "bel",
+          "text": "ela escreveu 'enfim vou ter respostas'",
+          "typingMs": 2440,
+          "next": "c1_18"
+        },
+        "c1_18": {
+          "id": "c1_18",
+          "type": "message",
+          "speaker": "bel",
+          "thread": "bel",
+          "text": "e uma foto de um estacionamento vazio, de noite",
+          "typingMs": 2935,
+          "next": "c1_19"
+        },
+        "c1_19": {
+          "id": "c1_19",
+          "type": "message",
+          "speaker": "bel",
+          "thread": "bel",
+          "text": "quem 'some por vontade propria' posta isso?",
+          "typingMs": 2715,
+          "next": "c1_c3"
+        },
+        "c1_c3": {
+          "id": "c1_c3",
+          "type": "choice",
+          "thread": "bel",
+          "options": [
+            {
+              "id": "c1_o3a",
+              "text": "ela parecia que ia VOLTAR. não que ia embora",
+              "next": "c1_pause",
+              "effects": [
+                {
+                  "type": "setFlag",
+                  "flag": "notou_contradicao"
+                }
+              ]
+            },
+            {
+              "id": "c1_o3b",
+              "text": "respostas sobre o quê? você faz ideia?",
+              "next": "c1_pause"
+            },
+            {
+              "id": "c1_o3c",
+              "text": "esse estacionamento… dá pra saber onde é?",
+              "next": "c1_pause",
+              "effects": [
+                {
+                  "type": "setFlag",
+                  "flag": "c1_perguntou_local"
+                }
+              ]
+            }
+          ]
+        },
+        "c1_pause": {
+          "id": "c1_pause",
+          "type": "delay",
+          "seconds": 3,
+          "next": "c1_20"
+        },
+        "c1_20": {
+          "id": "c1_20",
+          "type": "message",
+          "speaker": "bel",
+          "thread": "bel",
+          "text": "eu nao sei de tudo",
+          "typingMs": 1340,
+          "next": "c1_21"
+        },
+        "c1_21": {
+          "id": "c1_21",
+          "type": "message",
+          "speaker": "bel",
+          "thread": "bel",
+          "text": "mas ela tinha brigado com alguem",
+          "typingMs": 2110,
+          "next": "c1_22"
+        },
+        "c1_22": {
+          "id": "c1_22",
+          "type": "message",
+          "speaker": "bel",
+          "thread": "bel",
+          "text": "e nao quis me dizer com quem",
+          "typingMs": 1890,
+          "next": "c1_23"
+        },
+        "c1_23": {
+          "id": "c1_23",
+          "type": "message",
+          "speaker": "bel",
+          "thread": "bel",
+          "text": "vc acha mesmo que da pra descobrir alguma coisa?",
+          "typingMs": 2990,
+          "next": "c1_c4"
+        },
+        "c1_c4": {
+          "id": "c1_c4",
+          "type": "choice",
+          "thread": "bel",
+          "options": [
+            {
+              "id": "c1_o4a",
+              "text": "dá. vou começar anotando tudo e puxando uns contatos",
+              "next": "c1_close",
+              "effects": [
+                {
+                  "type": "setFlag",
+                  "flag": "investigacao_on"
+                }
+              ]
+            },
+            {
+              "id": "c1_o4b",
+              "text": "dá. e às vezes publicar uma matéria mexe com quem sabe de algo",
+              "next": "c1_close",
+              "effects": [
+                {
+                  "type": "setFlag",
+                  "flag": "pensa_publicar"
+                }
+              ]
+            },
+            {
+              "id": "c1_o4c",
+              "text": "vou ser sincero: não prometo nada. mas não vou ignorar isso",
+              "next": "c1_close",
+              "effects": [
+                {
+                  "type": "setFlag",
+                  "flag": "honesto"
+                }
+              ]
+            }
+          ]
+        },
+        "c1_close": {
+          "id": "c1_close",
+          "type": "message",
+          "speaker": "bel",
+          "thread": "bel",
+          "text": "qualquer coisa eu to aqui",
+          "typingMs": 1725,
+          "next": "c1_offer"
+        },
+        "c1_offer": {
+          "id": "c1_offer",
+          "type": "action",
+          "effects": [
+            {
+              "type": "offerBlog",
+              "blog": "blog_primeira_nota"
+            },
+            {
+              "type": "addTimeline",
+              "id": "tl_caso_cora",
+              "title": "O caso Cora",
+              "detail": "Cora Vasques, 24, sumiu numa sexta. Última mensagem: 'vou resolver uma coisa'. Polícia arquivou como saída voluntária."
+            }
+          ],
+          "next": "c1_notif"
+        },
+        "c1_notif": {
+          "id": "c1_notif",
+          "type": "notification",
+          "app": "blog",
+          "title": "Rascunho salvo",
+          "next": "c1_end",
+          "body": "O caso Cora — toque pra escrever no seu Blog."
+        },
+        "c1_end": {
+          "id": "c1_end",
+          "type": "chapterEnd",
+          "effects": [
+            {
+              "type": "setFlag",
+              "flag": "chapter01_done"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "chapterOrder": [
+    "prologo",
+    "chapter01"
+  ],
+  "_editor": {
+    "layouts": {
+      "prologo": {
+        "pg_start": {
+          "x": 111.13217207976044,
+          "y": -55.26956875507347
+        },
+        "pg_m2": {
+          "x": 45.186234620037084,
+          "y": 264.1814635588061
+        },
+        "pg_m3": {
+          "x": 31.52053390653805,
+          "y": 358.13259134467927
+        },
+        "pg_m4": {
+          "x": 29.074074074074076,
+          "y": 475.0925925925926
+        },
+        "pg_c1": {
+          "x": -328,
+          "y": 650
+        },
+        "pg_m5": {
+          "x": 106.93518518518516,
+          "y": 793.8888888888889
+        },
+        "pg_m6": {
+          "x": 59.74537037037038,
+          "y": 1293.1558641975307
+        },
+        "pg_b1": {
+          "x": 414.5679012345679,
+          "y": 1219.3773148148148
+        },
+        "pg_m7": {
+          "x": 48.171296296296305,
+          "y": 1467.2608024691358
+        },
+        "pg_c2": {
+          "x": 80,
+          "y": 1590
+        },
+        "pg_m8": {
+          "x": 80,
+          "y": 1760
+        },
+        "pg_m9": {
+          "x": 80,
+          "y": 1930
+        },
+        "pg_c3": {
+          "x": 80,
+          "y": 2100
+        },
+        "pg_m10": {
+          "x": 80,
+          "y": 2270
+        },
+        "pg_b2": {
+          "x": 80,
+          "y": 2440
+        },
+        "pg_b3": {
+          "x": 80,
+          "y": 2610
+        },
+        "pg_b4": {
+          "x": 80,
+          "y": 2780
+        },
+        "pg_cb1": {
+          "x": 44,
+          "y": 2918
+        },
+        "pg_b5": {
+          "x": 80,
+          "y": 3120
+        },
+        "pg_b6": {
+          "x": 80,
+          "y": 3290
+        },
+        "pg_b7": {
+          "x": 80,
+          "y": 3460
+        },
+        "pg_b8": {
+          "x": 80,
+          "y": 3630
+        },
+        "pg_b9": {
+          "x": 80,
+          "y": 3800
+        },
+        "pg_cb2": {
+          "x": 80,
+          "y": 3970
+        },
+        "pg_b10": {
+          "x": 80,
+          "y": 4140
+        },
+        "pg_b11": {
+          "x": 80,
+          "y": 4310
+        },
+        "pg_b12": {
+          "x": 80,
+          "y": 4480
+        },
+        "pg_b13": {
+          "x": 80,
+          "y": 4650
+        },
+        "pg_cb3": {
+          "x": 80,
+          "y": 4820
+        },
+        "pg_pause": {
+          "x": 562,
+          "y": 5042
+        },
+        "pg_b_intro": {
+          "x": 80,
+          "y": 5160
+        },
+        "pg_b_intro2": {
+          "x": 80,
+          "y": 5330
+        },
+        "pg_b_intro3": {
+          "x": 80,
+          "y": 5500
+        },
+        "pg_b_name": {
+          "x": 80,
+          "y": 5670
+        },
+        "pg_b_name2": {
+          "x": 80,
+          "y": 5840
+        },
+        "pg_cb4": {
+          "x": 80,
+          "y": 6010
+        },
+        "pg_b_thanks": {
+          "x": 80,
+          "y": 6180
+        },
+        "pg_b_thanks2": {
+          "x": 80,
+          "y": 6350
+        },
+        "pg_end": {
+          "x": 80,
+          "y": 6520
+        },
+        "off_mqj24qsi1": {
+          "x": 601.2795394058871,
+          "y": 889.1897553055386
+        },
+        "act_mqj25ajn2": {
+          "x": 90.06294018365199,
+          "y": 1111.5052492830246
+        },
+        "del_mqj28csx3": {
+          "x": 80.70307524884879,
+          "y": 1207.0628488255447
+        },
+        "eve_mqj7q4vd5": {
+          "x": 284.8400452077134,
+          "y": 90.90721703127183
+        },
+        "for_mqj94zc81": {
+          "x": -97.34766212529468,
+          "y": 131.8266199866025
+        },
+        "del_mqj96ipo2": {
+          "x": 532.1494564756348,
+          "y": 192.8261308498687
+        },
+        "not_mqj96yy83": {
+          "x": 532.0125729113377,
+          "y": 323.61048310227284
+        },
+        "cal_mqjqx30d1": {
+          "x": 451.25900554388625,
+          "y": 518.471863198547
+        },
+        "for_mqjriw1j3": {
+          "x": -131.8094732031442,
+          "y": 906.1060990348265
+        },
+        "bra_mqjrknl25": {
+          "x": 259.63489020262745,
+          "y": 913.8189718428746
+        }
+      },
+      "prologo::call::cal_mqjqx30d1": {
+        "cs_aud_mqjqz0y02": {
+          "x": -58.190715227778966,
+          "y": -112.36585211006017
+        },
+        "cs_cho_mqjr21594": {
+          "x": -472.7892086549838,
+          "y": 68.58354425772008
+        },
+        "cs_aud_mqjr2mp27": {
+          "x": 286.2512346243872,
+          "y": 380.7621985879405
+        },
+        "cs_act_mqjr3aut8": {
+          "x": 387.56769949034333,
+          "y": 118.4220354953448
+        },
+        "cs_del_mqjr4gnx9": {
+          "x": 661.2746946548159,
+          "y": 370.9983878956204
+        },
+        "cs_han_mqjr4mi8a": {
+          "x": 49.66928017827951,
+          "y": 814.8933338365752
+        },
+        "cs_act_mqjrhpd82": {
+          "x": -18.6380339825932,
+          "y": 386.9056882752449
+        },
+        "cs_aud_mqjsid5h1": {
+          "x": -353.8798835957394,
+          "y": 391.0050760343932
+        },
+        "cs_del_mqjsjqgh3": {
+          "x": -200.7750496750856,
+          "y": 604.7646218204208
+        }
+      }
+    }
+  }
+}
