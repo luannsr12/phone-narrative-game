@@ -1,4 +1,4 @@
-# Sinal Trocado 📱
+# Phone Narrative Game 📱
 
 A **narrative mystery game** for Android (React Native + Expo) where **the player's phone _is_ the
 game**. The whole story unfolds inside a fictional phone — texts, evidence, photos, audios, calls,
@@ -10,8 +10,7 @@ The game is **100% data-driven**: the entire narrative lives in a single JSON fi
 so you can write and reshape whole chapters **without touching the code** — using the visual editor.
 
 > The title, the cast and the chapters all come from `story.json` — this README is about how to
-> **run** the project and how to **publish your story** into the app. (Inside Expo the app is named
-> `ravenwood`.)
+> **run** the project and how to **publish your story** into the app.
 
 > **This project is open source, and you're warmly invited.** 💛 Whether you write, draw, compose,
 > code, translate, hunt bugs or just want to play and tell us what felt off — there's a place for
