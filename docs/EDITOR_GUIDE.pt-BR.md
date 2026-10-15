@@ -1123,8 +1123,6 @@ Essa segunda passada pega qualquer coisa que tenha escapado e confirma que o arq
 - **Não ignore avisos só porque a exportação funciona.** "A história trava aqui", "capítulo sem fim" e "próximo capítulo ainda não existe" são justamente como uma história inacabada fica em silêncio no jogo sem avisar. Limpe-os antes de dar um capítulo por concluído.
 - **Termine com `npm run validate-story`.** O sinal verde do editor é necessário; o sinal verde do repositório é o que de fato vai pro ar.
 
-Arquivos-fonte relevantes: `/home/luan/Desktop/PROJETOS/JS/rpg/editor/src/io.ts` (as regras de `validateBundle` + `exportBundle`), `/home/luan/Desktop/PROJETOS/JS/rpg/editor/src/App.tsx` (os botões `validar`/`exportar` e o modal de relatório), `/home/luan/Desktop/PROJETOS/JS/rpg/editor/src/panels/AuditPanel.tsx` (a UI da aba `Inspeção`) e `/home/luan/Desktop/PROJETOS/JS/rpg/editor/src/panels/auditScan.ts` (os scanners `scanDangling`/`chapterStats`/de alcançabilidade por trás da faixa de saúde).
-
 ---
 
 _Achou divergência entre este guia e o editor? O código-fonte é a fonte da verdade — abra uma issue ou PR. 💛_
