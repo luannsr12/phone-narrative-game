@@ -1123,8 +1123,6 @@ This second pass catches anything that slipped through and confirms the live gam
 - **Don't ignore warnings just because export works.** "Story freezes here", "chapter without an ending", and "next chapter doesn't exist yet" are how an unfinished story silently goes quiet in-game. Clear them before you call a chapter done.
 - **Finish with `npm run validate-story`.** The editor green light is necessary; the repo green light is what actually ships.
 
-Relevant source files: `/home/luan/Desktop/PROJETOS/JS/rpg/editor/src/io.ts` (the `validateBundle` rules + `exportBundle`), `/home/luan/Desktop/PROJETOS/JS/rpg/editor/src/App.tsx` (the `validar`/`exportar` buttons and report modal), `/home/luan/Desktop/PROJETOS/JS/rpg/editor/src/panels/AuditPanel.tsx` (the `Inspeção` tab UI), and `/home/luan/Desktop/PROJETOS/JS/rpg/editor/src/panels/auditScan.ts` (the `scanDangling`/`chapterStats`/reachability scanners behind the health band).
-
 ---
 
 _Spotted a mismatch between this guide and the editor? The source code is the source of truth — please open an issue or PR. 💛_
